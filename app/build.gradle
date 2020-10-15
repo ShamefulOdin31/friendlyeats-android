@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 30
@@ -22,6 +23,8 @@ android {
 }
 
 dependencies {
+    implementation platform('com.google.firebase:firebase-bom:25.12.0')
+    implementation 'com.google.firebase:firebase-analytics'
     // Firestore
     implementation 'com.google.firebase:firebase-firestore:21.7.1'
 
